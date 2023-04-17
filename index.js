@@ -8,8 +8,9 @@ const getRouter = require("./routes/get");
 const deleteRouter = require("./routes/delete");
 const editRotuer = require("./routes/edit");
 
-const { DB_URL, PORT } = process.env;
-
+// const { DB_URL, PORT } = process.env;
+const DB_URL="mongodb+srv://user1:1234@cluster0.ce6m1co.mongodb.net/hardware-asset"
+const PORT=4000
 mongoose.connect(DB_URL, {
   useNewUrlParser: true
 });
